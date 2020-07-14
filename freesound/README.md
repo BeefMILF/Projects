@@ -100,3 +100,16 @@ Make final blending of predictions and create a `sbm.csv` file for submission
 
 `resnet50/fold_1` and `resnet50/fold_1_r` preds were added to them and gave 91.365% on private  
  
+#### Related topic resources  
+
+* [audio seminar](https://colab.research.google.com/drive/1Waj2ECsrv6f65trZdId7r_h-cpC6Hj-0#scrollTo=_Z7ZiZj1wSAd) *(colab)*
+* [audio classifier](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/audio_classifier_tutorial.ipynb#scrollTo=bMxyrkWQ1mz4) *(colab)*
+* [sex identification, my homework](https://colab.research.google.com/drive/1Vr9hFQoQrWKpeLQMiy8i7E6gVMCdHONS) *(colab)*
+
+* https://github.com/sainathadapa/kaggle-freesound-audio-tagging - 8 place 
+* https://github.com/Cocoxili/DCASE2018Task2 - 4 place 
+
+* [Анализ аудиоданных с помощью глубокого обучения и Python (часть 1)](https://medium.com/nuances-of-programming/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%B3%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-python-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-2056fef8525e) *(medium)*
+
+
+
