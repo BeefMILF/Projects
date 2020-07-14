@@ -1,0 +1,101 @@
+dataloader:
+  audio_duration: 1.5
+  frame_shift: 10
+  input_length: 150
+  method: logmel
+  sampling_rate: 22050
+  test_transform: base
+  train_transform: base
+  val_transform: base
+logmel:
+  frame_shift: 10
+  frame_weight: 80
+  hop_length: 220
+  n_fft: 1764
+  n_mels: 64
+  sampling_rate: 22050
+method: logmel
+model:
+  arch: resnext101_32x4d
+  num_classes: 41
+  pretrained: true
+rawdata:
+  labels:
+  - Hi-hat
+  - Saxophone
+  - Trumpet
+  - Glockenspiel
+  - Cello
+  - Knock
+  - Gunshot_or_gunfire
+  - Clarinet
+  - Computer_keyboard
+  - Keys_jangling
+  - Snare_drum
+  - Writing
+  - Laughter
+  - Tearing
+  - Fart
+  - Oboe
+  - Flute
+  - Cough
+  - Telephone
+  - Bark
+  - Chime
+  - Bass_drum
+  - Bus
+  - Squeak
+  - Scissors
+  - Harmonica
+  - Gong
+  - Microwave_oven
+  - Burping_or_eructation
+  - Double_bass
+  - Shatter
+  - Fireworks
+  - Tambourine
+  - Cowbell
+  - Electric_piano
+  - Meow
+  - Drawer_open_or_close
+  - Applause
+  - Acoustic_guitar
+  - Violin_or_fiddle
+  - Finger_snapping
+  sampling_rate: 44100
+train:
+  device: cuda
+  max_epochs: 60
+  min_epochs: 5
+  mixup: true
+  mixup_p: 0.7
+  n_epochs: 50
+  on_folds:
+  - 1
+  optim:
+    optimizer:
+      adam:
+        lr: 0.008
+        weight_decay: 0
+      sgd:
+        lr: 0.009
+        momentum: 0.9
+        weight_decay: 0.0005
+    scheduler:
+      cosine_annealing:
+        T_max: 50
+      multi_step_lr:
+        gamma: 0.7
+        milestones:
+        - 20
+        - 30
+        - 40
+  retrain_val:
+    device: cuda
+    flag: true
+    max_epochs: 10
+    min_epochs: 2
+    mixup: true
+    mixup_p: 0.7
+    n_epochs: 6
+  seed: 3
