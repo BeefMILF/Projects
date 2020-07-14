@@ -87,9 +87,13 @@ Make final blending of predictions and create a `sbm.csv` file for submission
 * For submission, each model used for making 5 test_dataset predictions and averaged with gmean. 
 * After gmean used probability calibration that has no significant impact on final score 
 
+#### Training loggers
+
+![](train_logs.png)
+
+![](val_logs.png)
+
 #### Results 
-
-
 
 `resnext101_32x4d/fold_1` - gave ~89% (MAP@3) on private
 `resnext101_32x4d/fold_1_r` - is a retrained version of previous model and mixing preds gave ~90% (MAP@3) on private
